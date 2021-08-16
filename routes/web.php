@@ -19,16 +19,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home"
+        "title" => "Home",
+        "active" => "home"
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
-        "name" => "Jerry",
-        "email" => "jerry@gmail.com",
-        "img" => "jerry.jpg"
+        "name" => "Muhammad Elang Hardifal",
+        "email" => "Muelava@gmail.com",
+        "img" => "muelava.jpg",
+        "active" => "about"
     ]);
 });
 
